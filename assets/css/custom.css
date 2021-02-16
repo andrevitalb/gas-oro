@@ -1,0 +1,89 @@
+/*---------------------
+		Header
+---------------------*/
+
+#main_intro { height: 100vh; }
+
+
+/*---------------------
+	Facebook Feed
+---------------------*/
+
+#fb_feed { 
+	padding: 60px 25px;
+	background-color: #DFDFDF;
+}
+
+#fb_text {
+	color: #000;
+	position: relative;
+	height: 100%;
+}
+
+#fb_txt_cont{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#fb_cont, #fb_ins { 
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#fb_ins span, #fb_ins iframe { height: 500px !important; }
+
+/*---------------------
+	Gimmick
+---------------------*/
+#gimmick {
+	position: fixed;
+	bottom: 0px;
+	right: 10%;
+}
+
+.gimmick-gasoro {
+	float: right;
+	margin-top: -120px;
+}
+
+/*---------------------
+	Generales
+---------------------*/
+.bg-gold-light {
+	background-color: #F3E5B0;
+}
+
+.cover-background{
+	background-position: center bottom !important;
+}
+
+section.medium{
+	padding: 200px 0;
+}
+
+@media (max-width: 767px){
+	#fb_text {
+		position: initial;
+		height: auto;
+	}
+
+	#fb_txt_cont{
+		margin-bottom: 60px;
+		text-align: center;
+		position: initial;
+		top: initial;
+		transform: translateY(0);
+	}
+
+	#fb_ins span, #fb_ins iframe { 
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	#gimmick {
+		display: none;
+	}
+}
